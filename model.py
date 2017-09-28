@@ -9,5 +9,6 @@ query_job = client.run_async_query(str(uuid.uuid4()), query)
 query_job.begin()
 data = query_job.result()
 
+
 for row in data:
 	print(row)
